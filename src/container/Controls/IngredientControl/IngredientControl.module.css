@@ -1,0 +1,47 @@
+.controlsLess {
+  padding: 10px 20px;
+  margin: 20px;
+  text-align: center;
+  background-color: #c89f9c;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  border-radius: 10px;
+}
+
+.controlsLess:hover {
+  background-color: #ead2ac;
+  color: rgb(255, 255, 255);
+}
+
+.controlsMore {
+  padding: 10px 20px;
+  margin: 20px;
+  text-align: center;
+  background-color: #b07156;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  border-radius: 10px;
+}
+
+.controlsMore:hover {
+  background-color: #ead2ac;
+  color: rgb(255, 255, 255);
+}
+
+.title {
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: larger;
+}
+
+.ControlBox {
+  border: solid 5px #9c9c92;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
