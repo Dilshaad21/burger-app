@@ -1,0 +1,8 @@
+.Cell {
+  border: groove burlywood 3px;
+  padding: 15px 30px;
+  margin: 0px;
+  text-transform: capitalize;
+  font-size: large;
+  color: black;
+}

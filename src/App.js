@@ -6,8 +6,10 @@ class App extends Component {
   state = {};
   render() {
     return (
-      <div>
-        <h1 style={{ textAlign: "center" }}>Burger App</h1>
+      <div style={{ backgroundColor: "#FFD8BE", padding: "50px 0px" }}>
+        <h1 style={{ textAlign: "center", marginBottom: "30px" }}>
+          Burger App
+        </h1>
         <Layout>
           <BurgerBuilder />
         </Layout>
