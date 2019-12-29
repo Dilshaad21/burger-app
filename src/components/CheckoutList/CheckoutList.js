@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./CheckoutList.module.css";
+import axios from "../../container/axios-base-instance/axios-builder";
 
 const CheckoutList = props => {
   const OrderList = Object.keys(props.ingredients).map(igKey => {
@@ -10,6 +11,20 @@ const CheckoutList = props => {
       </tr>
     );
   });
+  const placeOrder = () => {
+    const orderObject = {
+      ingredients: props.ingredients,
+      totalPrice: props.totalPrice
+    };
+    axios
+      .post("/orders.json", orderObject)
+      .then(response => {
+        console.log(response);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
   return (
     <div>
       <div
@@ -33,6 +48,9 @@ const CheckoutList = props => {
       </table>
       <div style={{ fontSize: "20px" }}>
         <strong>Total Price:</strong> ${props.totalPrice}
+      </div>
+      <div>
+        <button onClick={placeOrder}>Continue</button>
       </div>
     </div>
   );
